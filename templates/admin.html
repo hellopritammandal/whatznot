@@ -1,0 +1,88 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<body>
+
+
+<title>Admin</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>WhatzNot Admin Panel</h2>
+  <p>From here I can view or edit my Leads </p>
+  <table class="table">
+    <thead>
+      <tr>
+        <title>Admin</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Lead details</h2>
+  <p>View all Lead Details</p>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>sno</th>
+        <th>name</th>
+        <th>email</th>
+        <th>msg</th>
+        <th>mobile</th>
+      </tr>
+    </thead>
+    <tbody>
+
+
+
+      {% for post in posts %}
+
+      <tr><td>{{post.sno}}</td>
+        <td>{{post.name}}</td>
+        <td>{{post.email}}</td>
+        <td>{{post.msg}}</td>
+        <td>{{post.mobile}}</td>
+        <td><a href="https://wa.me/91{{post.mobile}}" target="blank"> <button type="button" class="btn btn-success">Chat on Whatsapp  </button></a></td>
+        <td><a href="/delete/{{post.sno}}"> <button>Delete</button></a></td>
+      </tr>
+
+
+
+
+      {% endfor %}
+
+
+    </tbody>
+  </table>
+
+
+
+
+
+
+</body>
+
+
+<br><br><br>
+
+
+
+ <a href="/logout"> <button class="btn btn-primary"> Logout </button> </a>
+
+
+<br><br><br>
+
+
+
+
+    {% endblock %}
