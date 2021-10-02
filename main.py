@@ -138,7 +138,17 @@ def portfolio ():
 def shop ():
     return render_template('shop-page.html', params=params)
 
+@app.route("/creative-agency")
+def creative_agency ():
+    return render_template('creative-agency.html', params=params)
 
+@app.route("/digital-marketing")
+def digital_marketing ():
+    return render_template('digital-marketing.html', params=params)
+
+@app.route("/business-and-startup")
+def business_and_startup ():
+    return render_template('business-and-startup.html', params=params)
 
 
 
