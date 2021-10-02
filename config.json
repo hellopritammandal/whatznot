@@ -5,8 +5,8 @@
     "local_url" : "mysql://root:@localhost/wzn" ,
     "prod_uri" : "mysql://root:@localhost/wzn",
     "fb" : "https://facebook.com/whatznot",
-    "gu": "pmihub@gmail.com",
-    "gp": "Aa741222$$..",
+    "gu": "yourmail@mail.com",
+    "gp": "your password",
     "admin_u" : "admin",
     "admin_p" : "admin",
     "cr" : "Copyright © 2014-2021 WhatzNot Technology PVT. LTD . All rights reserved. Create By Pritam Mandal"
