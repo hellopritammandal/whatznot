@@ -150,6 +150,10 @@ def digital_marketing ():
 def business_and_startup ():
     return render_template('business-and-startup.html', params=params)
 
+@app.route("/shop-details")
+def shop_details ():
+    return render_template('shop-details.html', params=params)
+
 
 
 
